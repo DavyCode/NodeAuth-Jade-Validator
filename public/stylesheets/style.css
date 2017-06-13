@@ -1,0 +1,13 @@
+body {
+    padding: 50px;
+    font: 14px "Baloo", Cursive, latin;
+}
+
+footer {
+    background: #f4f4f4;
+    height: 40px;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 10px;
+    overflow: auto;
+}
