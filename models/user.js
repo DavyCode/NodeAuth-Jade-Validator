@@ -33,7 +33,7 @@ module.exports.comparePassword = function(candidatePassword, hash, callback) {
     })
 }
 
-module.exports.getUserById = function(username, callback) {
+module.exports.getUserById = function(id, callback) {
     User.findById(id, callback);
 }
 
