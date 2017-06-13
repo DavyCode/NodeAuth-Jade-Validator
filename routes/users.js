@@ -87,11 +87,11 @@ router.post('/register', function(req, res, next) {
 
 
 
-passport.serializeUser(function(id, done) {
+passport.serializeUser(function(user, done) {
     done(null, user.id);
 });
 
-passport.serializeUser(function(id, done) {
+passport.deserializeUser(function(id, done) {
     User.getUserById(id, function(err, user) {
         done(err, user);
     });

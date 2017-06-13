@@ -33,13 +33,12 @@ module.exports.comparePassword = function(candidatePassword, hash, callback) {
     })
 }
 
-module.exports.getUserByUsername = function(username, callback) {
-    var query = { username: username };
+module.exports.getUserById = function(username, callback) {
     User.findById(id, callback);
 }
 
 
-module.exports.getUserById = function(username, callback) {
+module.exports.getUserByUsername = function(username, callback) {
     var query = { username: username };
     User.findOne(query, callback);
 }
