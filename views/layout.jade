@@ -33,7 +33,9 @@ html(lang='en')
               li
                  a(href='/users/login') Logout       
 
-          
+
+.container
+  != messages()       
   block content
   footer
           p &copy; 2017, All Rights Reserved
